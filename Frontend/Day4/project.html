@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<head>
+    <title>clock assignment</title>
+    <style>
+        .main_container {
+            margin-left: 0%;
+            height: 750px;
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .first-circle {
+            border: solid 4px grey;
+            background-color: red;
+            height: 600px;
+            width: 600px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .second-container {
+            border: solid 4px grey;
+            background-color: white;
+            height: 450px;
+            width: 450px;
+            border-radius: 50%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hour {
+            background-color: black;
+
+            position: absolute;
+            height: 2%;
+            left: 50%;
+            transform-origin: 50% 100%;
+            width: 180px;
+            border: solid 2px black;
+        }
+
+        .minute {
+            position: absolute;
+            border: solid 1px black;
+            transform-origin: 50% 100%;
+            height: 46%;
+            width: 7px;
+            background-color: black;
+        }
+
+        .second {
+            background-color: black;
+            position: absolute;
+            height: 1%;
+            top: 50%;
+            right: 50%;
+            transform-origin: 5% 10%;
+            width: 49%;
+            border: solid 0.5px black;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="first-circle">
+            <div class="second-container">
+                <div>
+                    <div class="hour">
+
+                    </div>
+                </div>
+                <div>
+                    <div class="minute">
+
+                    </div>
+                </div>
+                <div>
+                    <div class="second">
+
+                    </div>>
+                </div>
+            </div>
+        </div>
+</body>
+
+
+
+</html>
