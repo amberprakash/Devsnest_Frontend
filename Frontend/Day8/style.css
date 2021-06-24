@@ -1,6 +1,9 @@
+body{
+    background-color: black;
+}
 .frame{
     height:600px;
-    background-color: black;
+    ;
 
 }
 .center {
@@ -12,6 +15,8 @@
     width:440px;
     flex-wrap:wrap;
     box-shadow:-17px -13px 13px 2px red;
+    background-color: black
+    ;
 }
 .center div{
     width: 20px;
