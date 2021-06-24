@@ -1,0 +1,25 @@
+.frame{
+    height:600px;
+    background-color: black;
+
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    display:flex;
+    width:440px;
+    flex-wrap:wrap;
+    box-shadow:-17px -13px 13px 2px red;
+}
+.center div{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid black;
+} 
+.center div:hover{
+    background-color: rgb(250, 107, 107);
+}
+  
