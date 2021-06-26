@@ -3,7 +3,7 @@ body{
 }
 .frame{
     height:600px;
-    ;
+    
 
 }
 .center {
@@ -16,7 +16,7 @@ body{
     flex-wrap:wrap;
     box-shadow:-17px -13px 13px 2px red;
     background-color: black
-    ;
+    
 }
 .center div{
     width: 20px;
@@ -24,6 +24,6 @@ body{
     background-color: white;
     border: 1px solid black;
 } 
-.center div:hover{
+/* .center div:hover{
     background-color: rgb(250, 107, 107);
-}
+} */

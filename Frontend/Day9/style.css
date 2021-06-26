@@ -1,3 +1,7 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 .maincontainer{
 background-image: url('https://wallpapercave.com/wp/wp3669751.gif');
 background-size: contain;
