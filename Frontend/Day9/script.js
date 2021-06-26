@@ -1,34 +1,32 @@
-function printHistoryBooked(num){
- document.getElementById("booked").innerText=num;
+function printBooked(num){
+    document.getElementById("booked").innerText=num;
 }
-function printHistoryleft(num){
+function printleft(num){
     document.getElementById("left").innerText=num;
 }
 
-
-
-const seat=document.querySelector(".seat");
+const master=document.querySelector(".master");
 var booked=0;
-var unbooked=30;
-for(let i=0;i<30;i++){
-    const item=document.createElement("div");
+var left=100
+for(let i=0;i<100;i++){
+    const item=document.createElement('div');
+    master.appendChild(item);
+    item.classList.add('amber');
     item.addEventListener('click',()=>{
-        const check=item.style.backgroundColor;
-        if(check=="grey"){
-            item.style.backgroundColor="brown";
+        if(item.classList.contains('clicked')){
+            item.classList.remove('clicked');
             booked--;
-            unbooked++;
-            printHistoryBooked(booked);
-            printHistoryleft(unbooked);
+            left++;
+            printBooked(booked);
+            printleft(left);
         }
         else{
-            item.style.backgroundColor="grey";
-            
+            item.classList.add('clicked');
             booked++;
-            unbooked--;
-            printHistoryBooked(booked);
-            printHistoryleft(unbooked);
+            left--;
+            printBooked(booked);
+            printleft(left);
         }
-    });
-    seat.append(item);
+    })
+
 }
