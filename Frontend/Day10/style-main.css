@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url('./kda-akali.gif');
+    background-size: cover;
+    transition: all 0.5s;
+}
+.status{
+    color: azure;
+}
+.container{
+    width: 100vw;
+    height: 97vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#grid{
+    width: 60%;
+    height: 80%;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    /* background-color: azure; */
+}
+.flip-card{
+    background-color: transparent;
+    perspective: 1000px;
+}
+.flip-inner{
+    position: relative;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    transition: transform 0.2s;
+    transform-style: preserve-3d;
+    /* background-color: brown; */
+}
+.front,.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;  
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.0px );
+    -webkit-backdrop-filter: blur( 7.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.back{
+    background-color: cornflowerblue;
+    color: cornsilk;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flipped {
+    transform: rotateY(180deg);
+  }
+.visi{
+      visibility: hidden;
+  }
+#bt{
+    height: 30px;
+    text-align: center;
+    width: 30px;
+    border-radius: 50%;
+    color: white;
+    background: transparent;
+}
