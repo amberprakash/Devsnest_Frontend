@@ -1,4 +1,5 @@
 var x=document.getElementById("myaudio");
+let xyz;
 var flag=1;
 function plays(){
 x.play();
@@ -38,11 +39,13 @@ for(let i=1;i<=16;i++){
     inner.classList.add("flip-inner");
 
     let front = document.createElement("div");
+    front.innerHTML = "<h3>" + i +"</h2>";
     front.classList.add("front");
 
     let back = document.createElement("div");
     let rand = Math.floor(Math.random() * (16 - i));
     back.innerHTML = "<h2>" + words[rand] + "</h2>";
+   
 
     words.splice(rand,1);
     back.classList.add("back");
@@ -66,7 +69,12 @@ for(let i=0;i<16;i++){
             btns[i].firstChild.classList.add("flipped");
             gameActive = false;
             setTimeout(() =>{
-                if(!( btns[i].firstChild.lastChild.innerHTML === click.firstChild.lastChild.innerHTML)){
+                if(xyz===btns[i].firstChild.firstChild.innerHTML){
+                    moves++;
+                    document.querySelector("span").innerHTML=moves;
+                    return;
+                }
+                else if(!( btns[i].firstChild.lastChild.innerHTML === click.firstChild.lastChild.innerHTML)){
                     btns[i].firstChild.classList.remove("flipped");
                     click.firstChild.classList.remove("flipped");
                 }
@@ -81,6 +89,7 @@ for(let i=0;i<16;i++){
             },500);
         }
         else{
+            xyz=btns[i].firstChild.firstChild.innerHTML;
             click = btns[i];
             btns[i].firstChild.classList.add("flipped");
         }
