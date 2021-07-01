@@ -39,7 +39,7 @@ for(let i=1;i<=16;i++){
     inner.classList.add("flip-inner");
 
     let front = document.createElement("div");
-    front.innerHTML = "<h3>" + i +"</h2>";
+    front.innerHTML = "<h3>" + i +"</h3>";
     front.classList.add("front");
 
     let back = document.createElement("div");
@@ -96,3 +96,6 @@ for(let i=0;i<16;i++){
     });
 }
 
+if(matches==8){
+    alert("You Won ");
+}
