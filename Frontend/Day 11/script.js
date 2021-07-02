@@ -150,9 +150,16 @@ document.querySelectorAll("#opt1, #opt2, #opt3, #opt4").forEach((elem)=>{
             },1000);
             
         }
+        if(i==5){
+            console.log("GAme Over");
+            document.querySelector(".quiz-box").style.display = "none";
+            document.querySelector("#last").style.display= "block";
+
+        }
        setTimeout(() => {
            arrquest[i].showQues();
        }, 1500);
+
             
         //}
         
