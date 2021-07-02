@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div class="container">
+      <div class="heading">QUIZZ</div>
+      <p>Score: <span id="score">0</span></p>
+      <p id="last">Game Over</p>
+      <div class="quiz-box">
+          <div class="question" id="quest"></div>
+          <div class="answers">
+              <button id="opt1"></button>
+              <button id="opt2"></button>
+              <button id="opt3"></button>
+              <button id="opt4"></button>
+          </div>
+      </div>
+      <div class="playagain"><button id="play">play again</button></div>
+      
+    </div>
+    <button id="bt" onclick="playPausebg()" type="button"><strong>P</strong></button>
+    <audio id="game-click">
+        <source src="./mixkit-gun-click-1123.wav" type="audio/mpeg">
+    </audio>
+    <audio id="background">
+        <source src="./alexander-nakarada-superepic.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

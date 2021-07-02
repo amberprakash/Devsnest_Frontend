@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            background-color: grey;
+            background-image: url('./best.gif');
+            background-size: cover;
+        }
+        .play{
+            position: relative;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+            height: 100px;
+            width: 100px;
+            display: flex;
+            background: transparent;
+            align-items: center;
+            justify-content: center;
+        }
+        #playbt{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            font-size: 25px;
+            background: rgba( 255, 255, 255, 0.25 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            border: 0;
+            backdrop-filter: blur( 6.5px );
+        }
+        .heading{
+            padding-top: 25px;
+            font-size: 45px;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">Naruto Shippuden QUIZZ</div>
+    <div class="play">
+        <button onclick="location.href='index.html';" id="playbt"><strong>Play</strong></button>
+    </div>
+    <!-- <audio id="naruto">
+        <source src="./alexander-nakarada-superepic.mp3" type="audio/mpeg">
+    </audio> -->
+    
+    <script src="./script2.js"></script>
+</body>
+</html>
