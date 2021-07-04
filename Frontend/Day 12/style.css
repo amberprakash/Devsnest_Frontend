@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  width: 100%;
+  background-image: radial-gradient( circle farthest-corner at 30% 50%,  rgba(15,27,49,1) 0%, rgba(0,112,218,1) 90% );
+}
+.nav{
+  text-align: center;
+  font-size: 30px;
+  background-color: #00a6ff;
+  box-shadow: 0 8px 16px 6px  #00f2ff;
+}
+.container{
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  /* background-color: grey; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+input{
+  width: 99.8%;
+  height: 50px;
+  border: 0;
+  border-radius: 8px;
+  font-size: 25px;
+  text-align: center;
+}
+input:hover{
+  box-shadow: 0 8px 16px 6px  #00f2ff;
+}
+.add{
+  margin-top: 10px;
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 30px;
+  left:40%;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+}
+.add:hover{
+  opacity: 1.5;
+  color: white;
+  background-color: #1433ff;
+  box-shadow: 0px 8px 16px 1px  #00f2ff;
+}
+.list{
+  position: relative;
+  height: 400px;
+  top: 10%;
+  /* background-color: grey; */
+}
+.item-main{
+  display: flex;
+  flex-direction: row;
+}
+.item{
+  
+  display: flex;
+  background-image: linear-gradient( 65.9deg,  rgba(85,228,224,1) 5.5%, rgba(75,68,224,0.74) 54.2%, rgba(64,198,238,1) 55.2%, rgba(177,36,224,1) 98.4% );
+  height: 35px;
+  width: 445px;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  border-radius: 5px;
+}
+.del{
+  width: 40px;
+  height: 35px;
+  background-image: url('./delete-189.png');
+  background-size: contain;
+  border:0;
+  border-radius: 8px;
+  margin-left: 5px;
+}
+.del:hover{
+  box-shadow: 0px 4px 8px 0px  red;
+}
+/* span{
+  visibility: hidden;
+} */
+.new{
+  visibility: hidden;
+}

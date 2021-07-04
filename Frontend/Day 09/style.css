@@ -11,10 +11,10 @@ height:750px;
    position: absolute;
    height: 420px;
    width: 420px;
-   top: 50%;
+  
+    top: 50%;
    left: 50%;
    transform: translate(-50%,-50%);
-   
    display: flex;
    flex-wrap: wrap;
 }
