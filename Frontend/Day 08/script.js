@@ -5,7 +5,7 @@ for(let i=0;i<400;i++){
     center.append(item);
     item.addEventListener('click',()=>{
         const check=item.style.backgroundColor;
-        if(check==="white"){
+        if(check==="black"){
             item.style.backgroundColor="black";
         }
         else{
