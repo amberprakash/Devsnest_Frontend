@@ -8,9 +8,9 @@ function focussed(){
     alert("This field is mandatory");}
     flag=0;
 }
-// function Load(){
-//     alert("Window Load succesfully");
-// }
+function Load(){
+    alert("Window Load succesfully");
+}
 function SizeChange(){
     alert("Window Size changed");
 }
