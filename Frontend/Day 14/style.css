@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    /* background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
+
+}
+.nav{
+    text-align: center;
+    font-size: 50px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-top: 45px;
+    /* background-color: white; */
+    height: fit-content;
+    width: 600px;
+}
+.heading{
+    margin-left: 10px;
+}
+::placeholder{
+    color: rgb(199, 197, 197);
+    opacity: 1;
+}
+.input{
+    color: whitesmoke;
+    background: transparent;
+    margin-top: 10px;
+    margin-left: 15px;
+    border: 0;
+    width: 550px;
+    border-bottom: solid 2px rgb(255, 255, 255);
+    margin-bottom: 20px;
+    outline: none;
+}
+#filled{
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 100px;
+    background-color: white;
+    font-size: 10px;
+    visibility:hidden;
+}
+.next-category{
+    margin-top: 15px;
+  margin-left: 20px;
+}
+.collegename{
+    margin-top: 15px;
+}
+#submit{
+    position: relative;
+    margin-top: 20px;
+    left: 230px;
+    width: 100px;
+}

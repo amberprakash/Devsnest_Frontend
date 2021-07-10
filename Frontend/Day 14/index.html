@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+</head>
+<body onload="Load()" onresize="SizeChange()">
+    <div class="nav">Give Some Information</div>
+    <div class="container">
+        <form action="https://contenthub-static.grammarly.com/blog/wp-content/uploads/2019/02/thank-you.jpg" id="form" onsubmit="onFormSubmit(event)">
+            <div class="heading name" id="inputname">*Name</div>
+            <div><input onclick="nameFocus()" onblur="" class="input name" type="text" placeholder="Ex-Amber Prakash Verma"/></div>
+            <div class="heading username" >*Devsnest Username</div>
+            <div><input class="input username" onclick="nameFocus()" type="text" placeholder="Ex-amberprakash"/></div>
+            <div class="heading gender">*Choose Gender</div>
+            <div>
+                <select class="next-category" id="select" onchange="changeGender()" onmouseover="MouseOverEventGender()">
+                   <option value="male">MALE</option>
+                   <option value="female">FEMALE</option>
+                   <option value="other">OTHER</option>
+                   
+               </select>
+            </div>
+            <div class="heading collegename" onmouseover="MouseOverEventCollege()">*College</div>
+            <div><input onclick="nameFocus()" class="input college" type="text" placeholder="Ex-KIET Group Of Institution"/></div>
+            <input type="submit" id="submit" value="Submit"/>
+
+        </form>
+        <script src="./script.js"></script>
+    </div>
+</body>
+</html>
