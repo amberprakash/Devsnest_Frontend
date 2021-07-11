@@ -1,7 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+// import React from 'react';
+// import ReactDOM from 'react-dom';
 
 ReactDOM.render(
-    <h1>Hello World!!!</h1>,
+    React.createElement('h1',{},'Hello World!!!'),
     document.querySelector('#myworld')
 )
