@@ -37,11 +37,7 @@ const Card = () => {
     setItems(newItems);
   };
 
-//   useEffect(() => {
-//     if (items.length === 0) {
-//       alert("Its EMpty . ANsh");
-//     }
-//   }, [items]);
+
 
   return (
     <>
