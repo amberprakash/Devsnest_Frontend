@@ -1,0 +1,119 @@
+*{
+    padding:0;
+    margin: 0;
+}
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('https://i.pinimg.com/originals/2d/21/3d/2d213d36f66c318754bd4b78ab9361f1.jpg');
+    background-size: cover;
+    
+}
+.container{
+    height: 650px;
+    width: 600px;
+    /* background-color: aqua; */
+    overflow-y: scroll;
+    border: white solid 2px;
+    box-shadow: white 0 4px 4px 8px;
+}
+.addbutton{
+    display: block;
+    background-color: aqua;
+    color: white;
+    height: 45px;
+    border: none;
+}
+.input{
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+    justify-content: space-between;
+}
+/* .main{
+    margin: 25px;
+} */
+.crateinput1{
+    width: 250px;
+    height: 35px;
+    font-size: 30px;
+}
+.crateinput2{
+    width: 250px;
+    height: 35px;
+    font-size: 30px;
+}
+.but{
+    margin-left: 25px;
+    margin-right: 25px;
+    
+    
+}
+.addbutton{
+    width: 530px;
+    height: 30px;
+    font-size: 25px;
+}
+.itemlist{
+    margin: 25px;
+    text-align: center;
+    font-size: 45px;
+}
+.item{
+    font-size: 25px;
+    border: 2px black solid;
+    margin-bottom: 5px;
+}
+.input-edit{
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+    justify-content: space-between;
+}
+.action{
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+    justify-content: space-between;
+}
+.done{
+    width: 250px;
+    height: 35px;
+    background-color: rgb(27, 201, 27);
+    border: none;
+    color: white;
+    font-size: 25px;
+}
+.edit{
+    width: 250px;
+    height: 35px;
+    background-color: rgb(71, 71, 248);
+    border: none;
+    color: white;
+    font-size: 25px;
+
+}
+.delete{
+    width: 250px;
+    height: 35px;
+    background-color: rgb(248, 85, 85);
+    border: none;
+    color: white;
+    font-size: 25px;
+
+}
+.delete:hover{
+    cursor: pointer;
+}
+.newname{
+    width: 250px;
+    height: 35px;
+    font-size: 25px;
+}
+.newcalorie{
+    width: 250px;
+    height: 35px;
+    font-size: 25px;
+}
