@@ -43,16 +43,16 @@ function Input() {
                 <button className="btn" onClick={handleClick}>ADD</button>
             </div>
 
-            {check && <h1>Image Gallary</h1>}
+            {check && <h1 className="head">Image Gallary</h1>}
             <div className="image-section">
                 {temp.length === 0 ? (<h1>Empty Gallary</h1>) :
-                    (
-                        temp.map((image, index) => {
-                            <div key={image.id} >
+                    (   
+                        temp.map((image, index) => (
+                            <div key={image.id} className="card" >
                                 <img src={image.urls.full} />
                             </div>
 
-                        })
+                        ))
                     )
 
                 }
