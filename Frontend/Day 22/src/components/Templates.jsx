@@ -1,8 +1,8 @@
-const Templates = ({templates,setMeme}) => {
+const Templates = ({ templates, setMeme }) => {
     return (
         <div className="templates">
             {templates.map((template) => (
-                <div key={template.id} className="template" onClick={()=>{
+                <div key={template.id} className="template" onClick={() => {
                     setMeme(template);
                 }}>
                     <div
