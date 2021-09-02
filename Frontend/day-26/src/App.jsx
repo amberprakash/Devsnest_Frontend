@@ -12,10 +12,12 @@ function App() {
       <div><h1>SIGN IN</h1></div>
       <div>
         <input className="username" placeholder="USERNAME" onChange={(e)=>{
-           dispatch(namechange());
+          console.log(e.target.value);
+           dispatch(namechange(e.target.value));
         }}></input>
         <input className="password" placeholder="PASSWORD" onChange={(e)=>{
-          dispatch(pass());
+          console.log(e.target.value);
+          dispatch(pass(e.target.value));
         }}></input>
       </div>
       <div className="details">
