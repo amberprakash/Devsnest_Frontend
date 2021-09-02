@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.App{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 27%, rgba(0,212,255,1) 84%);
+}
+.App *{
+  padding: 10px;
+  margin: 10px;
+}
