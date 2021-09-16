@@ -2,9 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
 }
 .App {
   text-align: center;
+  height: 100vh;
 }
 .form{
   margin-top: 100px;
@@ -38,9 +40,27 @@ box-shadow:
 .card .place{
   font-size: 1.2rem;
   opacity: 0.8;
+  margin: 10px 0px;
+}
+.whp{
+  margin: 20px 0px;
 }
 .card .temp{
   font-size: 4rem;
   font-weight: 500;
   margin-left: 30.39px;
+}
+.whp .title{
+  font-size: 0.8rem;
+}
+.whp .data{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.whp .data .unit{
+  font-size: 0.8rem;
+}
+.card .desc{
+  font-size: 0.8rem;
+  font-weight: 500;
 }
