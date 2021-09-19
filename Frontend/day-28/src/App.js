@@ -41,12 +41,12 @@ function App() {
                       <div className="col">
                         <div className="titile">Humidity</div>
                         <div className="data">
-                        {placeData.current.humidity}<spna className="unit">%</spna></div>
+                          {placeData.current.humidity}<spna className="unit">%</spna></div>
                       </div>
                       <div className="col">
                         <div className="titile">Precipitation</div>
                         <div className="data">
-                        {placeData.current.precip_in}<spna className="unit">%</spna></div>
+                          {placeData.current.precip_in}<spna className="unit">%</spna></div>
                       </div>
                     </div>
                   </div>
