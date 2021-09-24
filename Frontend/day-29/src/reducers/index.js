@@ -1,9 +1,10 @@
 import { combineReducers } from "redux";
-import placeReducer from "./placeReducer";
-import placeDataReducer from "./placeDataReducer";
-
-const rootReducer = combineReducers({
-    place: placeReducer,
-    placeData: placeDataReducer,
-});
-export default rootReducer;
+import InputReducer from "./InputReducers"
+import SubmitReducer from "./SubmitReducer"
+import themeReducer from "./themeReducer";
+const rootReducer=combineReducers({
+    place:InputReducer,
+    placeData:SubmitReducer,
+    toggle:themeReducer
+})
+export default rootReducer

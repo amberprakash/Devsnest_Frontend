@@ -1,20 +1,20 @@
+import {useDispatch} from "react-redux";
 import { useSelector } from "react-redux";
-
-
-const Form = () => {
-    const place = useSelector((state) => state.place);
+import {Input,Submit} from "../actions"
+const Form=()=>{
+    const dispatch=useDispatch()
+    const place=useSelector((state)=>state.place)
+    const theme=useSelector((state)=>state.toggle)
     return (
-        <div className="container">
-            <div className="row">
-                <div className="col-12 form">
-                    <input type="text" value={place} onChange={(e) => {
-                       // setPlace(e.target.value);
-                    }} />
-                    <button className="btn btn-primary" //</div>onClick={}
-                    >
-                    Submit</button>
-                </div>
-            </div>
+        <div className="col-12 form">
+                <input onChange={(e)=>{
+                    dispatch(Input(e.target.value))
+                }} value={place} placeholder="Enter Your City"/>
+                <button className="btn btn-secondary" onClick={()=>{
+                    dispatch(Submit(place))
+                    
+                }
+                }>Submit</button>
         </div>
     )
 }

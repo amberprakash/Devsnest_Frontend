@@ -1,0 +1,91 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #DEDDDD;
+}
+.app{
+  text-align: center;
+}
+.form {
+  display: flex;
+  justify-content: center;
+}
+.form input{
+  padding:5px;
+  margin-top:50px;
+}
+.form button{
+  margin :50px 0px 0 10px;
+}
+.card{
+  margin-top:20px;
+  padding:20px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.name{
+  color:#05050F;
+  font-size:2rem;
+  font-weight:bolder;
+}
+.country{
+  color:#A3A3A5;
+  font-size:1.3rem;
+}
+
+.temp{
+  color:#EB24C0;
+  font-size:4rem;
+  font-weight: 700;
+  margin-left:35px;
+}
+.mini img{
+  margin-bottom: 70px;
+  width:35px;
+}
+.detail{
+  color:#05050F;
+  font-weight: 800;
+}
+.title{
+  color:#A3A3A5;
+  font-weight: bold;
+}
+.text_temp{
+  font-weight: bold;
+  color:#05050F;
+}
+.switch{
+  margin-left:80%;
+  margin-top:20px;
+}
+.card-dark{
+  background-color: #3A224A;
+  margin-top:20px;
+  padding:20px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.name-dark{
+  font-size:2rem;
+  font-weight:bolder;
+  color:white;
+}
+.detail-dark{
+  font-weight: 800;
+  color:white;
+}
+.light{
+  color:black;
+
+}
+.dark{
+  color:white;
+}
+.text_temp-dark{
+  color:white;
+  font-weight: bold;
+}
